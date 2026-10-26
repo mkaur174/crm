@@ -1,0 +1,15 @@
+<div class="container mt-5 px-4">
+  <h1 class="title">Alphabetized Customers</h1>
+
+  <div class="tabs">
+    <ul>
+      <li><%= link_to 'All Customers', root_path %></li>
+      <li><%= link_to 'Alphabetized', customers_alphabetized_path %></li>
+      <li><%= link_to 'Missing Email', customers_missing_email_path %></li>
+    </ul>
+  </div>
+
+  <div class="columns is-multiline">
+    <%= render @customers %>
+  </div>
+</div>
